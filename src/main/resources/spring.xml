@@ -47,7 +47,7 @@
     
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="#{dbConfig['mysql_driver_class']}"/>
-        <property name="url" value="${jdbc_url}"/>
+        <property name="url" value="#{dbConfig['jdbc_url']}"/>
         <property name="username" value="#{dbConfig['jdbc_user']}"/>
         <property name="password" value="#{dbConfig['jdbc_password']}"/>
         <property name="initialSize" value="#{dbConfig['initialSize']}"/>
