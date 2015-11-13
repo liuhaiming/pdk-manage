@@ -718,6 +718,8 @@ DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci
 
 ;
 
+SET FOREIGN_KEY_CHECKS=0;
+
 -- ----------------------------
 -- Table structure for `pdk_sm_func`
 -- ----------------------------
@@ -734,6 +736,7 @@ CREATE TABLE `pdk_sm_func` (
 `ts`  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ,
 `dr`  smallint(6) NULL DEFAULT 0 ,
 `sq`  smallint(6) NULL DEFAULT NULL ,
+`has_flow`  char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'N' ,
 PRIMARY KEY (`id`)
 )
 ENGINE=MyISAM

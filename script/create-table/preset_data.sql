@@ -33,34 +33,38 @@ INSERT INTO `pdk_bd_position` VALUES ('PDKPREDATA0000000003', '03', '业务员(�
 -- Records of pdk_sm_func
 -- ----------------------------
 delete from pdk_sm_func;
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350001', 'INDEX', '首页', '05', '/pdk-manage', 'icon-home', '', '0', '2015-08-09 00:00:00', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350002', 'NOTE_BOOK', '基础数据', '10', 'javascript:void(0)', 'icon-notebook', '', '0', '2015-08-09 00:00:00', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350003', 'UNIT', '单位', '1005', 'bd/bd_unit', 'icon-book-open', '0001SM201508081914350002', '0', '2015-08-09 00:00:00', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350004', 'GOODS_TYPE', '商品种类', '1010', 'bd/bd_goodsType', 'icon-book-open', '0001SM201508081914350002', '0', '2015-08-09 00:00:00', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350005', 'GOODS', '商品', '1015', 'bd/bd_goods', 'icon-book-open', '0001SM201508081914350002', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350006', 'SM', '系统管理', '15', 'javascript:void(0)', 'icon-settings', '', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350007', 'ORG', '组织管理', '1505', 'sm/sm_org', 'icon-user', '0001SM201508081914350006', '0', '2015-08-09 00:00:00', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350008', 'ROLE', '角色管理', '1510', 'sm/sm_role', 'icon-user', '0001SM201508081914350006', '0', '2015-08-09 00:00:00', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350009', 'USER', '人员管理', '1515', 'sm/sm_employee', 'icon-user', '0001SM201508081914350006', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350010', 'CUSTOM', '用户管理', '1520', 'sm/sm_user', 'icon-user', '0001SM201508081914350006', '0', '2015-08-09 00:00:00', '0', '20');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350011', 'AUTH', '权限管理', '1525', 'sm/sm_permission', 'icon-user', '0001SM201508081914350006', '0', '2015-08-09 00:00:00', '0', '25');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350012', 'FLOW', '流程配置', '20', 'javascript:void(0)', 'icon-directions', '', '0', '2015-08-09 00:00:00', '0', '20');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350013', 'FLOW_TYPE', '业务类型', '2005', 'flow/flow_types', 'icon-direction', '0001SM201508081914350012', '0', '2015-08-09 00:00:00', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350014', 'FLOW_TACHE', '流程环节', '2010', 'flow/flow_units', 'icon-direction', '0001SM201508081914350012', '0', '2015-08-09 00:00:00', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350015', 'FLOW_TEMP', '流程模板配置', '2015', 'flow/flow_templates', 'icon-direction', '0001SM201508081914350012', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350016', 'DOCS', '订单管理', '25', 'javascript:void(0)', 'icon-docs', '', '0', '2015-08-09 00:00:00', '0', '25');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350017', 'DETAIL', '订单明细管理', '2505', 'order/orderindex', 'icon-doc', '0001SM201508081914350016', '0', '2015-08-09 00:00:00', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350018', 'FOLOW_BIZ_TYPE', '订单跟踪(业务类型)', '2510', 'order/flowType/index', 'icon-doc', '0001SM201508081914350016', '0', '2015-08-09 00:00:00', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350019', 'FOLOW_TACHE', '订单跟踪(流程环节)', '2515', 'order/flowUnit/index', 'icon-doc', '0001SM201508081914350016', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350020', 'CUSTOM_SERVICE', '客服管理', '30', 'cs', 'icon-home', '', '0', '2015-08-09 00:00:00', '0', '30');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350021', 'SHOP', '商店', '1020', 'bd/bd_shop', 'icon-book-open', '0001SM201508081914350002', '0', '2015-08-09 00:00:00', '0', '15');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350022', 'COUPON', '优惠券管理', '27', 'javascript:void(0)', 'icon-present', null, '0', '2015-09-10 17:48:36', '0', '27');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350023', 'COUPON_ACT', '优惠券派送管理', '2705', 'coupon/coupon_activity', 'icon-present', '0001SM201508081914350022', '0', '2015-09-10 17:50:19', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350026', 'CHAT_MSG', '聊天记录', '3010', 'cs/chat/msg/index', 'icon-bubble', '0001SM201508081914350020', '0', '2015-10-20 14:56:55', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350025', 'CHAT', '客服服务', '3005', 'cs/chat', 'icon-bubble', '0001SM201508081914350020', '0', '2015-09-22 17:57:15', '0', '5');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350024', 'COUPON_TMP', '优惠券活动模板管理', '2710', 'coupon/coupon_activity_template', 'icon-present', '0001SM201508081914350022', '0', '2015-10-10 19:28:08', '0', '10');
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350028', 'REPORT', '报表', '35', 'report', 'icon-notebook', NULL, 0, '2015-10-27 14:22:34', 0, 35);
-INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350029', 'REPORT_ORDER', '每日订单报表', '3505', 'report/order', 'icon-book-open', '0001SM201508081914350028', 0, '2015-10-27 14:23:30', 0, 5);
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350001', 'INDEX', '首页', '05', '/pdk-manage', 'icon-home', '', 0, '2015-8-9 00:00:00', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350002', 'NOTE_BOOK', '基础数据', '10', 'javascript:void(0)', 'icon-notebook', '', 0, '2015-8-9 00:00:00', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350003', 'UNIT', '单位', '1005', 'bd/bd_unit', 'icon-book-open', '0001SM201508081914350002', 0, '2015-8-9 00:00:00', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350004', 'GOODS_TYPE', '商品种类', '1010', 'bd/bd_goodsType', 'icon-book-open', '0001SM201508081914350002', 0, '2015-8-9 00:00:00', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350005', 'GOODS', '商品', '1015', 'bd/bd_goods', 'icon-book-open', '0001SM201508081914350002', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350006', 'SM', '系统管理', '15', 'javascript:void(0)', 'icon-settings', '', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350007', 'ORG', '组织管理', '1505', 'sm/sm_org', 'icon-user', '0001SM201508081914350006', 0, '2015-8-9 00:00:00', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350008', 'ROLE', '角色管理', '1510', 'sm/sm_role', 'icon-user', '0001SM201508081914350006', 0, '2015-8-9 00:00:00', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350009', 'USER', '人员管理', '1515', 'sm/sm_employee', 'icon-user', '0001SM201508081914350006', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350010', 'CUSTOM', '用户管理', '1520', 'sm/sm_user', 'icon-user', '0001SM201508081914350006', 0, '2015-8-9 00:00:00', 0, 20, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350011', 'AUTH', '权限管理', '1525', 'sm/sm_permission', 'icon-user', '0001SM201508081914350006', 0, '2015-8-9 00:00:00', 0, 25, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350012', 'FLOW', '流程配置', '20', 'javascript:void(0)', 'icon-directions', '', 0, '2015-8-9 00:00:00', 0, 20, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350013', 'FLOW_TYPE', '业务类型', '2005', 'flow/flow_types', 'icon-direction', '0001SM201508081914350012', 0, '2015-8-9 00:00:00', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350014', 'FLOW_TACHE', '流程环节', '2010', 'flow/flow_units', 'icon-direction', '0001SM201508081914350012', 0, '2015-8-9 00:00:00', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350015', 'FLOW_TEMP', '流程模板配置', '2015', 'flow/flow_templates', 'icon-direction', '0001SM201508081914350012', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350016', 'DOCS', '订单管理', '25', 'javascript:void(0)', 'icon-docs', '', 0, '2015-8-9 00:00:00', 0, 25, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350017', 'DETAIL', '订单明细管理', '2505', 'order/orderindex', 'icon-doc', '0001SM201508081914350016', 0, '2015-8-9 00:00:00', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350018', 'FOLOW_BIZ_TYPE', '订单跟踪(业务类型)', '2510', 'order/flowType/index', 'icon-doc', '0001SM201508081914350016', 0, '2015-8-9 00:00:00', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350019', 'FOLOW_TACHE', '订单跟踪(流程环节)', '2515', 'order/flowUnit/index', 'icon-doc', '0001SM201508081914350016', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350020', 'CUSTOM_SERVICE', '客服管理', '30', 'cs', 'icon-home', '', 0, '2015-8-9 00:00:00', 0, 30, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350021', 'SHOP', '商店', '1020', 'bd/bd_shop', 'icon-book-open', '0001SM201508081914350002', 0, '2015-8-9 00:00:00', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350022', 'COUPON', '优惠券管理', '27', 'javascript:void(0)', 'icon-present', NULL, 0, '2015-9-10 17:48:36', 0, 27, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350023', 'COUPON_ACT', '优惠券派送管理', '2705', 'coupon/coupon_activity', 'icon-present', '0001SM201508081914350022', 0, '2015-9-10 17:50:19', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350026', 'CHAT_MSG', '聊天记录', '3010', 'cs/chat/msg/index', 'icon-bubble', '0001SM201508081914350020', 0, '2015-10-20 14:56:55', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350025', 'CHAT', '客服服务', '3005', 'cs/chat', 'icon-bubble', '0001SM201508081914350020', 0, '2015-9-22 17:57:15', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350024', 'COUPON_TMP', '优惠券活动模板管理', '2710', 'coupon/coupon_activity_template', 'icon-present', '0001SM201508081914350022', 0, '2015-10-10 19:28:08', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350027', 'CHAT_C', '客服服务(宽屏版)', '3015', 'cs/chat/c', 'icon-bubble', '0001SM201508081914350020', 0, '2015-9-22 17:57:15', 0, 15, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350028', 'REPORT', '报表', '35', 'report', 'icon-notebook', NULL, 0, '2015-10-27 14:22:34', 0, 35, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350029', 'REPORT_ORDER', '每日订单报表', '3505', 'report/order', 'icon-book-open', '0001SM201508081914350028', 0, '2015-10-27 14:23:30', 0, 5, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350030', 'REPORT_YWY', '业务员支出报表', '3510', 'report/ywymny', 'icon-book-open', '0001SM201508081914350028', 0, '2015-10-28 18:02:24', 0, 10, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350031', 'WF', '工作流管理', '18', 'javascript:void(0)', 'icon-directions', NULL, 0, '2015-11-9 12:37:46', 0, 18, 'N');
+INSERT INTO `pdk_sm_func` VALUES ('0001SM201508081914350032', 'DESIGNER', '流程管理', '1805', 'wf/wf_designer', 'icon-direction', '0001SM201508081914350031', 0, '2015-11-9 12:38:13', 0, 1805, 'N');
 
 -- ----------------------------
 -- Records of pdk_sm_role
